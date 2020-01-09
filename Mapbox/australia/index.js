@@ -21,3 +21,8 @@ map.on('load', () => {
         }
     });
 });
+
+// Om man trykker på Australia på kartet
+map.on('click', 'australia', (evt) => {
+    alert(evt.features[0].properties.landkode);
+});
