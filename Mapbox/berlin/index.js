@@ -6,17 +6,34 @@ const map = new mapboxgl.Map({
     style: 'mapbox://styles/catharinasorum/ck56gdvfd0bfd1dquuy3cv3dk'
 });
 
-// Funksjonen for å "fly"
-const flyVidere = () => {
-    map.flyTo({
-        center: [13.409416, 52.520830],
-        duration: 5000,
-        bearing: 180,
-        pitch: 3
-    });
+// Settings for Fernsehturm plassering
+const fernsehturmSettings = {
+    center: [13.409416, 52.520830],
+    duration: 5000,
+    bearing: 180,
+    pitch: 3
+}
+
+// Settings for Humboldt plassering
+const humboldtSettings = {
+    center: [13.393612, 52.517994],
+    duration: 5000,
+    bearing: 180,
+    pitch: 80
+}
+
+// flyTo
+const flyTilFernsehturm = () => {
+    map.flyTo(fernsehturmSettings);
 };
 
-// fly fra Berliner Domen til Fjernsynstårnet
+// easeTo
+const flyTilHumboldt = () => {
+    map.easeTo(humboldtSettings);
+};
+
+// fly fra Berliner Domen til Fjernsynstårnet til Humboldt University
 map.on("load", () => {
-    setTimeout(flyVidere, 3000);
+    setTimeout(flyTilFernsehturm, 3000);
+    setTimeout(flyTilHumboldt, 9000);
 });
