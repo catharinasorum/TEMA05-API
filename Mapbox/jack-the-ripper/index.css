@@ -42,6 +42,10 @@ nav article:hover {
     background-color: #ccc;
 }
 
+#map {
+    height: 60vh;
+}
+
 .marker {
     background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/8/87/Christian_cross.svg/733px-Christian_cross.svg.png');
     background-size: contain;
