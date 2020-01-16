@@ -18,10 +18,11 @@ body {
 #btnTom {
     padding: 1rem;
     border-radius: 5px;
-    
+    outline: none;
 };
 
 #btnAlan {
     padding: 1rem;
     border-radius: 5px;
+    outline: none;
 };
