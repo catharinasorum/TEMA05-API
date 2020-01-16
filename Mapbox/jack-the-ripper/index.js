@@ -14,11 +14,6 @@ const map = new mapboxgl.Map({
 
 const ofre = [
     {
-        lng: -0.071368,
-        lat: 51.516506,
-        navn: "Martha Tabra"
-    },
-    {
         lng: -0.061042,
         lat: 51.519883,
         navn: "Mary Nichols"
@@ -38,7 +33,7 @@ const ofre = [
         lat: 51.513833,
         navn: "Catherine Eddowes"
     },
-    {
+    { // feil coordinater
         lng: -0.244632,
         lat: 51.489264,
         navn: "Mary Kelly"
